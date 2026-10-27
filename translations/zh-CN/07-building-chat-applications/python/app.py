@@ -30,9 +30,9 @@ system_prompt = """
 
 system_prompt_1 = """
 你是一个非常专业的助理。所有的回答都要以中文输出，并且要尽量详细和专业。请确保你的回答是准确的，并且易于理解。
-""" 
+"""
 
-prompt = f"Product description: A home milkshake maker\nSeed words: fast, healthy, compact.\nProduct names: HomeShaker, Fit Shaker, QuickShake, Shake Maker\n\nProduct description: A pair of shoes that can fit any foot size.\nSeed words: adaptable, fit, omni-fit."
+prompt = "Product description: A home milkshake maker\nSeed words: fast, healthy, compact.\nProduct names: HomeShaker, Fit Shaker, QuickShake, Shake Maker\n\nProduct description: A pair of shoes that can fit any foot size.\nSeed words: adaptable, fit, omni-fit."
 
 response = client.responses.create(
     model="deepseek-flash",  # 这是您的模型部署名称
